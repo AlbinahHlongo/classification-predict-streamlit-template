@@ -1,6 +1,10 @@
 
 #streamlit dependencies
 
+
+
+
+
 import streamlit as st
 import joblib, os
 
@@ -69,7 +73,7 @@ vectorizer = open('resources/tfidfvect.pkl','rb')   ##  will be replaced by the 
 tweet_cv = joblib.load(vectorizer)
 
 #@st.cache
-data = pd.read_csv('resources/train1.csv')
+data = pd.read_csv('resources/train.csv')
 
 def main():
     """Tweets classifier App"""
